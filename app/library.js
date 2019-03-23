@@ -3,7 +3,10 @@ class Library {
     this.books = books;
   }
 
-  add() {}
+  add(title, ISBN, author) {
+    const newBook = {name:title, ISBN:ISBN, author:author, available:true };
+    this.books.push (newBook)
+  }
 }
 
-module.exports = Library;
+module.exports = Library
